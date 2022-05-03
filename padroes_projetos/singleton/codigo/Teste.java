@@ -36,7 +36,7 @@ public class Teste {
 			SingletonConnectionSocket.setInstance("8080", "10.0.9.1");
 			
 			System.out.println(
-					"Conexao da Rotina B após mudança: "+ connectionData.port + " - " + connectionData.ipAddress);
+					"Rotina B altera dados de conexão: "+ connectionData.port + " - " + connectionData.ipAddress);
 		}
 	}
 }
