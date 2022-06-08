@@ -9,7 +9,7 @@ public class BuscaFinanceiro implements Busca{
 			for(Object i : pessoas){
 				Pessoa pessoa = (Pessoa)i;
 				System.out.println("Nome: "+pessoa.getNome());
-				System.out.println("Prateleira: "+pessoa.getSalario());
+				System.out.println("Salario: "+pessoa.getSalario());
 			}
 		} else {
 			System.out.println("Nenhum funcionario encontrado");

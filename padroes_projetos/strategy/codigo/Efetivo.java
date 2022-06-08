@@ -5,11 +5,11 @@ public class Efetivo {
 	
 	private List<Pessoa> lista;
 	
-	private Empresa empresa;
+	private Buscador buscador;
 	
-	public Efetivo(Empresa emp){
+	public Efetivo(Buscador emp){
 		lista = new LinkedList<Pessoa>();
-		empresa = emp;
+		buscador = emp;
 	}
 	
 	public void addColaborador(Pessoa p){
@@ -22,7 +22,7 @@ public class Efetivo {
 			Pessoa pessoa = (Pessoa)i;
 			if(p.matches(pessoa)) l.add(pessoa); //aqui a ordem teve que ser invertida, ou seja, tive que chamar o matches de p, que eh passado como argumento e tem o atributo matches setado, e nao chamar o matches de prod, que eh o produto do estoque e nao tem o matches setado - pois se o matches de prod fosse chamado, daria NullPointer
 		}
-		empresa.realizarImpressao(l);
+		buscador.realizarImpressao(l);
 		
 	}
 

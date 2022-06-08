@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>10</y>
+      <w>500</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>::FuncionarioData
+--
++setor: String
++salario: double
++produtividade: double
+--
++FuncionarioData(String setor, double salario, double produtividade): ctor
++getSetor(): String
++getSalario(): double
++getProdutividade(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>10</y>
+      <w>280</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>::PosVendas
+--
+-fatorDeBonus = 0.4: double
+-func: FuncionarioData
+--
++PosVendas(FuncionarioData func): ctor
++getBonus(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>200</y>
+      <w>270</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>::Retencao
+--
+-fatorDeBonus = 0.3: double
+-func: FuncionarioData
+--
++Retencao(FuncionarioData func): ctor
++getBonus(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>370</x>
+      <y>200</y>
+      <w>280</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>::Televendas
+--
+-fatorDeBonus = 0.4: double
+-func: FuncionarioData
+--
++Televendas(FuncionarioData func): ctor
++getBonus(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>200</y>
+      <w>290</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>::VendasFisica
+--
+-fatorDeBonus = 0.15: double
+-func: FuncionarioData
+--
++VendasFisica(FuncionarioData func): ctor
++getBonus(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>330</y>
+      <w>300</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>::VendasOnline
+--
+-fatorDeBonus = 0.3: double
+-func: FuncionarioData
+--
++VendasOnline(FuncionarioData func): ctor
++getBonus(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>330</y>
+      <w>150</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+::FacadeCalculoBase
+--
+--
+~getBonus(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>330</y>
+      <w>380</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>::Calculadora
+--
+--
++getCalculo(FuncionarioData func): FacadeCalculoBase
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>460</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>::Teste
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

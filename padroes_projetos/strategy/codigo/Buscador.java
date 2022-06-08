@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Empresa {
+public class Buscador {
 	
 	private Busca b;
 	
