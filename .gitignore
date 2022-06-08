@@ -8,7 +8,8 @@
 *.ear
 *.nar
 hs_err_pid*
-
+github_key
+github_key.pub
 ##############################
 ## Maven
 ##############################
